@@ -64,6 +64,7 @@ body {
   color: var(--violet);
   font-weight: 400;
   cursor: pointer;
+  background-color: white;
 }
 
 .mockup-text button:hover {
@@ -152,7 +153,7 @@ body {
     margin-top: 2.5rem;
   }
 }
-/* iPad Pro 12.9 */
+/* iPad Pro 12.9 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
   body {
     background: url(images/bg-mobile.svg);
@@ -189,4 +190,4 @@ body {
     display: flex;
     justify-content: center;
   }
-}
+}*/
