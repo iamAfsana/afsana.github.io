@@ -1,43 +1,150 @@
+:root {
+  --violet: hsl(257, 40%, 49%);
+  --soft-magenta: hsl(300, 69%, 71%);
+  --hradings-font: "Poppins", sans-serif;
+  --body-font: "Open Sans", sans-serif;
+}
+
+html {
+  background-color: var(--violet);
+}
+
 body {
   background-image: url(images/bg-desktop.svg);
-  background-color: hsl(257, 40%, 49%);
-  width: 1440px;
-  border-top: solid #000;
-  border-left: solid #000;
-  border-right: solid #000;
-  border-bottom: solid #000;
-  position: absolute;
+  min-height: 100vh;
   margin: 0 auto;
-  padding-left: 75px;
-  color: #fff;
-  font-size: 12px;
-  font-family: open sans;
+  font-family: var(--body-font);
   font-weight: 400;
 }
-header {
-  margin-top: 60px;
-  margin-bottom: 75px;
+.main-container {
+  padding-top: 2.5rem;
   position: relative;
+  margin: 0 auto;
+  width: 90vw;
+  min-height: 42rem;
 }
-.left-side {
-  float: left;
-  width: 50%;
-  margin-right: 50px;
+
+#logo {
+  width: 10rem;
+  margin-bottom: 4rem;
 }
-.right-side {
-  float: left;
-  width: 40%;
+.mockup-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-bottom: 1rem;
 }
-img .img-left {
-  width: 450px;
-  height: 430px;
+.mockup-container img {
+  max-width: 57%;
+  margin-right: 3vw;
+  object-fit: contain;
 }
-.logo {
-  width: 210px;
+
+.mockup-text {
+  width: calc(43% - 3vw);
+  padding-top: 2rem;
+}
+.mockup-text h1 {
+  font-family: var(--hradings-font);
+  color: white;
+  font-weight: 600;
+}
+.mockup-text p {
+  color: hsl(255, 44%, 86%);
+  font-weight: 400;
+  line-height: 1.9rem;
+}
+.mockup-text button {
+  margin-top: 1rem;
+  padding: 0.8rem 4rem;
+  border-radius: 2.5rem;
+  border: none;
+  box-shadow: 1px 1px 10px hsl(254, 60%, 30%);
+  color: var(--violet);
+  font-weight: 400;
+}
+.social-links {
+  position: absolute;
+  right: 0;
+  /* bottom: 0; */
+  padding-bottom: 2rem;
+}
+.social-links i {
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 2.1rem;
+  width: 2.1rem;
+  height: 2.1rem;
+  margin-left: 0.5rem;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.social-links i:hover {
+  color: hsl(255, 44%, 86%);
+  border-color: hsl(255, 44%, 86%);
 }
 button {
-  border-radius: 10px;
+  border-radius: 32px;
   width: 200px;
   height: 60px;
   color: hsl(257, 40%, 49%);
+  border: 0 none;
+  font-size: 16px;
+  box-shadow: 0px 3px 8px hsl(257, 52%, 33%);
+}
+@media only screen and (max-width: 720px) {
+  html {
+    font-size: 14px;
+  }
+  body {
+    background: url(images/bg-mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #logo {
+    margin-bottom: 3rem;
+  }
+  .mockup-container img {
+    max-width: 100%;
+    padding-right: 0;
+  }
+  .mockup-text {
+    text-align: center;
+    width: 100%;
+  }
+  .mockup-text h1 {
+    font-size: 1.8rem;
+  }
+  .mockup-text button {
+    padding: 1rem 5rem;
+  }
+  .social-links {
+    position: unset;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 721px) and (max-width: 983px) {
+  html {
+    font-size: 15px;
+  }
+  body {
+    background: url(images/bg-mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .mockup-text {
+    padding-top: 0;
+  }
+  .mockup-text h1 {
+    font-size: 1.8rem;
+    margin-top: 0;
+  }
+  .mockup-container {
+    margin-top: 2.5rem;
+  }
 }
