@@ -152,3 +152,41 @@ body {
     margin-top: 2.5rem;
   }
 }
+/* iPad Pro 12.9 */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+    background: url(images/bg-mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  html {
+    font-size: 18px;
+  }
+  .mockup-text {
+    text-align: center;
+    width: 100%;
+  }
+  .mockup-text h1 {
+    font-size: 3rem;
+  }
+  .mockup-text p {
+    font-size: 20px;
+  }
+  .mockup-container {
+    padding-bottom: 3rem;
+  }
+  .mockup-container img {
+    max-width: 100%;
+    padding-right: 0;
+    margin-bottom: 3rem;
+  }
+  .main-container {
+    width: 70vw;
+  }
+  .social-links {
+    position: unset;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+}
