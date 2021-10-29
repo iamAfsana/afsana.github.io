@@ -63,7 +63,14 @@ body {
   box-shadow: 1px 1px 10px hsl(254, 60%, 30%);
   color: var(--violet);
   font-weight: 400;
+  cursor: pointer;
 }
+
+.mockup-text button:hover {
+  color: white;
+  background-color: hsl(300, 69%, 71%);
+}
+
 .social-links {
   position: absolute;
   right: 0;
@@ -80,21 +87,14 @@ body {
   margin-left: 0.5rem;
   border-radius: 50%;
   border: 1px solid white;
+  cursor: pointer;
 }
 
 .social-links i:hover {
-  color: hsl(255, 44%, 86%);
-  border-color: hsl(255, 44%, 86%);
+  color: hsl(300, 69%, 71%);
+  border-color: hsl(300, 69%, 71%);
 }
-button {
-  border-radius: 32px;
-  width: 200px;
-  height: 60px;
-  color: hsl(257, 40%, 49%);
-  border: 0 none;
-  font-size: 16px;
-  box-shadow: 0px 3px 8px hsl(257, 52%, 33%);
-}
+
 @media only screen and (max-width: 720px) {
   html {
     font-size: 14px;
